@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b07b8f7c6e.js"
+      crossorigin="anonymous"></script>
+    <script defer src="/main.js"></script>
+    <title>CCCalc - A Calculator by Clinton Clark</title>
+  </head>
+  <body onload="startup()">
+    <main id="calculator">
+      <section class="screen-wrapper">
+        <div class="logo">CCCalc</div>
+        <div id="screen" class="screen dimmed off">
+          <div class="log">Off</div>
+          <div class="screen-content"></div>
+        </div>
+        <div class="empty"></div>
+      </section>
+      <section id="keyboard">
+        <button
+          class="calc-button fa-solid fa-power-off"
+          id="power-button"></button>
+        <button class="calc-button fa-solid fa-arrow-left" id="back"></button>
+        <button class="calc-button fa-solid fa-c" id="clear"></button>
+        <button class="calc-button fa-regular fa-lightbulb" id="light"></button>
+        <button class="calc-button number-button">7</button>
+        <button class="calc-button number-button">8</button>
+        <button class="calc-button number-button">9</button>
+        <button class="calc-button operator-button" id="divide">/</button>
+        <button class="calc-button number-button">4</button>
+        <button class="calc-button number-button">5</button>
+        <button class="calc-button number-button">6</button>
+        <button class="calc-button operator-button fa-solid" id="times">
+          *
+        </button>
+        <button class="calc-button number-button">1</button>
+        <button class="calc-button number-button">2</button>
+        <button class="calc-button number-button">3</button>
+        <button class="calc-button operator-button" id="minus">-</button>
+        <button class="calc-button number-button">0</button>
+        <button class="calc-button number-button" id="decimal">.</button>
+        <button class="calc-button fa-solid" id="equals">=</button>
+        <button class="calc-button fa-solid operator-button" id="add">+</button>
+      </section>
+    </main>
+  </body>
+</html>
